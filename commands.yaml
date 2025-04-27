@@ -1,0 +1,15 @@
+code .
+
+
+node -v
+npm -v
+
+
+npm create-react-app(depricated) so use parcel or vite
+
+npm create vite/ npm create vite@latest
+
+npm install / npm 
+
+npm run dev
+
