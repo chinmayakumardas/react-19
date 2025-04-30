@@ -3,6 +3,7 @@ code .
 
 node -v
 npm -v
+npm list vite
 
 
 npm create-react-app(depricated) so use parcel or vite
