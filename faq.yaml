@@ -1,0 +1,18 @@
+1.=dependencies vs devDependencies(use for run the project and use for development purpose called devDependency. )
+
+2.= package-lock.json(may be depency depends on other dependency so that handled by this file).
+
+3.= vite.config.js (it basic used for config of vite like port changes allow origin etc.)
+
+4.= eslint.config.js (use for rules and validation and use of validations)
+
+5.= import,export(Mutiple Export/import ,Mutiple export/import,default export/import)
+
+6.= react without jsx()
+
+7.= meaning of "react": "^19.0.0",  this line (here 19 is major release,0. is minor release, 2nd 0 is for minor bugs and error)
+
+8.= stable vs rc version(stabel means done and Release Candidate (RC):
+A version of software that is considered nearly ready for release, often used to identify a build that is ready for final testing before a stable release. )
+
+9.= 
