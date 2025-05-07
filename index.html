@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Blog Home</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #3b82f6, #6366f1);
+      padding: 25px 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fffb7d;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #374151;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .blog-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .blog-content {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .blog-title {
+      font-size: 20px;
+      margin-bottom: 12px;
+      color: #111827;
+    }
+
+    .blog-summary {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #4b5563;
+    }
+
+    .read-more {
+      text-decoration: none;
+      background: #10b981;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .read-more:hover {
+      background: #059669;
+    }
+
+    footer {
+      background: #1f2937;
+      color: #d1d5db;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 60px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Blog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog-grid">
+
+      <!-- Blog 1 -->
+      <div class="blog-card">
+        <img src="https://i.ytimg.com/vi/1Rs2ND1ryYc/maxresdefault.jpg" alt="Blog 1">
+        <div class="blog-content">
+          <h3 class="blog-title">The Future of Web Development</h3>
+          <p class="blog-summary">Explore how modern frameworks like Next.js and tools like Tailwind CSS are shaping the next generation of web apps.</p>
+          <a href="blog1.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog 2 -->
+      <div class="blog-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQKDkW6Irk6pvAXWLRa6jZe0RStRumZ74K3g&s" alt="Blog 2">
+        <div class="blog-content">
+          <h3 class="blog-title">Why You Should Learn to Code in 2025</h3>
+          <p class="blog-summary">Coding is not just for developers. Learn how coding can improve your productivity and open new opportunities.</p>
+          <a href="blog2.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog 3 -->
+      <div class="blog-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkUFmp5jSF-DhrD5102bzHU7RbidetfqYfA&s" alt="Blog 3">
+        <div class="blog-content">
+          <h3 class="blog-title">Understanding AI: A Beginner’s Guide</h3>
+          <p class="blog-summary">Get started with artificial intelligence. Learn key concepts, how it works, and what it means for your future.</p>
+          <a href="blog3.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog 4 -->
+      <div class="blog-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYKRpURTbQaCWxrRw8KDNMmsoCAG8urvrHZg&s" alt="Blog 4">
+        <div class="blog-content">
+          <h3 class="blog-title">The Power of Side Projects</h3>
+          <p class="blog-summary">Discover how side projects can boost your resume, creativity, and technical skills. Real tips for developers and creatives.</p>
+          <a href="blog4.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog 5 -->
+      <div class="blog-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNukKFusPo-N1SxXC_x2VHXgh5P2ASNiMmQ&s" alt="Blog 5">
+        <div class="blog-content">
+          <h3 class="blog-title">Top 10 Tools for Remote Work in 2025</h3>
+          <p class="blog-summary">Master productivity with the best tools for working from home, freelancing, or managing remote teams.</p>
+          <a href="blog5.html" class="read-more">Read More</a>
+        </div>
+      </div>
+      <!-- Blog 6 -->
+      <div class="blog-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsHxrvF5Q3q4YPXSHcpuzBB_PnAfZx_bT1mQ&s" alt="Blog 5">
+        <div class="blog-content">
+          <h3 class="blog-title">How to Write a blog.</h3>
+          <p class="blog-summary">Master productivity with the best tools for working from home, freelancing, or managing remote teams.</p>
+          <a href="blog5.html" class="read-more">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 My Blog. All rights reserved.
+  </footer>
+
+</body>
+</html>
